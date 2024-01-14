@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="_9dls" lang="en" dir="ltr">
+<head>
+   <!-- Your head content goes here -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no" />
+   <meta name="theme-color" content="#ffffff" />
+   <!-- Add other meta tags, links, and icons as needed -->
+
+   <!-- Preload the splash screen image -->
+   <link rel="preload" as="image" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7MT1AY1EBnBBbXK_qVz1Sl8ZL3DfUgbq1dEdN4chDVWXfFWtfm8bJTSnA9thDng7lFJOEg4eMyZtvmgqkzwBimz2UUJ-t6xv57znSEWAPGh0XYCB2hBI8oYEfQIwrwc2F4_8u4fG9NY0gHyDpS6AS3hFznLwqRNBY3yy4W2voLzB0fdjlJCgDGdgJlxYB/s1591/Picsart_24-01-14_17-44-17-158.jpg">
+
+   <style>
+      body {
+         margin: 0;
+         overflow: hidden;
+      }
+
+      .splash-screen {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7MT1AY1EBnBBbXK_qVz1Sl8ZL3DfUgbq1dEdN4chDVWXfFWtfm8bJTSnA9thDng7lFJOEg4eMyZtvmgqkzwBimz2UUJ-t6xv57znSEWAPGh0XYCB2hBI8oYEfQIwrwc2F4_8u4fG9NY0gHyDpS6AS3hFznLwqRNBY3yy4W2voLzB0fdjlJCgDGdgJlxYB/s1591/Picsart_24-01-14_17-44-17-158.jpg') center / cover no-repeat; /* Replace 'your-splash-image.jpg' with your actual image path */
+         opacity: 1;
+         transition: opacity 1.5s ease-in-out;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      .content {
+         display: none; /* Hide the main content initially */
+      }
+   </style>
+</head>
+<body>
+   <div class="splash-screen"></div>
+   <div class="content">
+      <!-- The main content of your app goes here -->
+   </div>
+   <!-- Add your other HTML content here -->
+
+   <script>
+      // Show the splash screen
+      document.querySelector('.splash-screen').style.display = 'flex';
+
+      // Simulate loading by using setTimeout
+      setTimeout(function () {
+         // Fade out the splash screen
+         document.querySelector('.splash-screen').style.opacity = '0';
+
+         // Redirect to the original page after the fade out
+         setTimeout(function () {
+            window.location.href = 'https://sgsvdbdusbswbwbs.github.io/Insclone/'; // Replace 'your-original-page.html' with your actual page URL
+         }, 100); // Adjust the delay time as needed
+      }, 2000); // Adjust the delay time as needed
+   </script>
+</body>
+</html>
